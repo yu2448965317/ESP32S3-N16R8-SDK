@@ -1,0 +1,12 @@
+#include "foc_utils.h" 
+#include "FOCMotor.h" 
+#include "BLDCmotor.h" 
+#include "lowpass_filter.h" 
+#include "pid.h"
+#include "systick.h"
+#include "esp32_driver_mcpwm.h"
+#include "AS5600.h"
+#include <math.h>
+#include "ui.h"
+#include "call_back.h"
+#include "diy_widget.h"

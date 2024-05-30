@@ -1,0 +1,11 @@
+1、使用无刷电机或者步进电机时，如果需要进行烧录程序，请尽可能将电机与主板断开，以防止引脚状态异常导致烧毁主板！无刷电机和步进电机不能一起使用！
+      如需关闭步进电机驱动过流检测，可将R55更换为10K电阻
+      所有引脚定义及说明都在MAIN文件夹下的gpio_define.h头文件里
+2、若无法正常启动编译，请检查路径：ESP32S3_LVGL_PROJECT\.vscode\c_cpp_properties.json 中 "compilerPath": "e:\\esp\\tools\\xtensa-esp32s3-elf\\esp-2022r1-11.2.0\\xtensa-esp32s3-elf\\bin\\xtensa-esp32s3-elf-gcc.exe"的路径是否为你电脑中idf tools安装的路径，若不是，请手动更改。
+3、若编译不通过，请先确认当前IDF版本，确认是否为master分支，IDF版本不能为master分支且版本要为IDF5.01或更高。
+4、关于工程目录下的create_makelist.py脚本说明：如果使用工程初始目录架构，不需要运行此脚本；如果使用单一main文件夹架构，可以运行此脚本，会自动生成CMakeLists.txt文件，不懂可以咨询我。
+5、LVGL学习网址：http://lvgl.100ask.org/8.2/examples.html#simple-message-box （墙裂推荐！！！！！）
+		https://www.xyhtml5.com/22595.html
+6、LVGL开发工具：https://squareline.io/downloads（墙裂推荐！！内置多种demo）
+7、如需技术协助、远程技术支持、LVGL工程移植示范请联系我，随问随答！
+
